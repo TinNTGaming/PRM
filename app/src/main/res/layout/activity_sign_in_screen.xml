@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <ImageView
+        android:id="@+id/ImageViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Check Icon"
+        android:src="@drawable/my_signin" />
+
+
+    <TextView
+        android:id="@+id/notificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageViewSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-19dp"
+        android:text="Đăng Nhập"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thankYouTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Đăng nhập vào tài khoản của bạn"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thankYouTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Đăng Nhập"
+        android:textSize="16sp"
+
+        android:textColor="@android:color/white" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="470dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:hint="Username"
+            android:importantForAccessibility="yes"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:gravity="center_vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:importantForAccessibility="yes"
+            android:drawableStart="@drawable/padlock"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationTextView"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="80dp"
+        android:text="Bạn chưa có tài khoản? "
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/dangnhapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationTextView"
+        android:layout_marginLeft="239dp"
+        android:layout_marginTop="266.6dp"
+        android:background="@android:color/transparent"
+        android:text="Đăng Ký"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

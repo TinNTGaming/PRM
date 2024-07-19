@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+      >
+
+        <ImageView
+            android:id="@+id/ivNewsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/one_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Tên sản phẩm"
+            android:textSize="20dp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/one_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/one_name"
+            android:contentDescription="Giá sản phẩm"
+            android:maxEms="100"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_add"
+        android:layout_below="@id/rt_layout"
+        android:layout_marginVertical="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mota_tit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ln_gradien"
+                android:padding="4dp"
+                android:text="MÔ TẢ CHI TIẾT"
+                android:textSize="20sp"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mota"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/tv_mota_tit"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <android.widget.Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ln_gradien"
+        android:text="Thêm Vào Giỏ Hàng!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

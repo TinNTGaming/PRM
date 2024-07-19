@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    card_view:cardCornerRadius="5dp">
+
+   <LinearLayout
+       android:background="@drawable/border2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <TextView
+           android:background="@drawable/ln_gradien"
+           android:textAlignment="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerInParent="true"
+           android:layout_marginBottom="20dp"
+           android:text="THÔNG BÁO"
+           android:textColor="@color/white"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/tvInfo"
+           android:layout_marginBottom="20dp"
+           android:textColor="@color/main2"
+           android:text="..."
+           android:textAlignment="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+       <android.widget.Button
+           android:id="@+id/okDialog"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginBottom="8dp"
+           android:background="@drawable/ln_gradien"
+           android:text="ĐÓNG"
+           android:textColor="@color/white"
+           android:textStyle="bold" />
+   </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
